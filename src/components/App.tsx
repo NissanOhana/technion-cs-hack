@@ -1,7 +1,10 @@
 import { Box, Container, ThemeProvider, Typography } from "@mui/material";
 import React, { useState, useMemo } from "react";
 import { getAppTheme } from "../theme";
+import { ErrorPage } from "./ErrorPage";
+import { FAQPage } from "./FAQPage";
 import { Header } from "./Header";
+import { HomePage } from "./HomePage";
 
 function App() {
   /**
@@ -12,11 +15,24 @@ function App() {
 
   const theme = useMemo(() => getAppTheme(), []);
 
+  const [page, setPage] = useState("home");
+
+  const handleChangePage = (page: string) => {
+    setPage(page);
+  };
+
+  // Check how we case pass props: values or even functions! :)
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth='md' sx={{ textAlign: "center" }}>
-        <Header />
-        <Typography> היי עולם </Typography>
+        <Header handleChangePage={handleChangePage} />
+        {page === "home" ? (
+          <HomePage />
+        ) : page === "faq" ? (
+          <FAQPage />
+        ) : (
+          <ErrorPage />
+        )}
       </Container>
     </ThemeProvider>
   );
