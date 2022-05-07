@@ -20,8 +20,11 @@ read more here: https://mui.com/
 Now, we will start to build the main layout.
 First, read about html & css! Those are the basics, and you must have basic knowledge about it.
 After that, you need to learn about the flexbox layout module.
+
 Read about it here: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 MUI flexbox: https://mui.com/system/flexbox/
+
 The Flexbox Layout (Flexible Box) module aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).
 
 ### MUI Theme & ThemeProvider
@@ -31,7 +34,7 @@ https://mui.com/material-ui/customization/theming/#themeprovider
 
 ### Components
 
-We make our own first component: <Header>, and use other MUI pre-built component.
+We make our own first component: Header, and use other MUI pre-built component.
 
 ## Table of Contents
 
