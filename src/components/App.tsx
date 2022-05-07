@@ -1,5 +1,5 @@
-import { Box, Container, ThemeProvider, Typography } from "@mui/material";
-import React, { useState, useMemo } from "react";
+import { Container, ThemeProvider } from "@mui/material";
+import { useMemo, useState } from "react";
 import { getAppTheme } from "../theme";
 import { ErrorPage } from "./ErrorPage";
 import { FAQPage } from "./FAQPage";
