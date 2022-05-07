@@ -5,16 +5,21 @@
 - React app & Firebase
 - Eeach commit - a development phase, so you can follow in your own phase.
 
-## Phase 4 - Firebase
+## Phase 5 - Firestore DB
 
-Add firebase to our project!
+Create new Firestore DB and connect it to out app.
 
-Follow the steps in the presantation, and install the firebase package:
-```sh
-npm install firebase
-```
+Get, Create and Delete documents from our datebase.
 
-Then, create the firebase.js file and copy the config object.
+But before you can start, you _MUST_ to read about async programing:
+
+- Read: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+- Read: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+- Watch: https://www.youtube.com/watch?v=vn3tm0quoqE
+- Watch: https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=4s
+
+Read about firestore functions - we use web version 9 (modular) : https://firebase.google.com/docs/firestore
+
 ## Table of Contents
 
 | Phase / Commit | Details          |
@@ -22,5 +27,5 @@ Then, create the firebase.js file and copy the config object.
 | 1              | Installations    |
 | 2              | UI & Main layout |
 | 3              | State & Props    |
-| 4              | Firebase Config    |
-
+| 4              | Firebase Config  |
+| 5              | Firestore DB     |
