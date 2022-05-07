@@ -11,7 +11,7 @@ Create new Firestore DB and connect it to out app.
 
 Get, Create and Delete documents from our datebase.
 
-But before you can start, you _MUST_ to read about async programing:
+But before you can start, you _MUST_ read about async programing:
 
 - Read: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 - Read: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
