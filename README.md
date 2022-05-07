@@ -5,17 +5,16 @@
 - React app & Firebase
 - Eeach commit - a development phase, so you can follow in your own phase.
 
-## Phase 3 - State & Props
+## Phase 4 - Firebase
 
-First, read about React function component. I recommand to focus and work with this concept (and not class component).
+Add firebase to our project!
 
-Read:
-https://reactjs.org/docs/components-and-props.html
+Follow the steps in the presantation, and install the firebase package:
+```sh
+npm install firebase
+```
 
-https://reactjs.org/docs/hooks-intro.html
-
-https://www.robinwieruch.de/react-function-component/
-
+Then, create the firebase.js file and copy the config object.
 ## Table of Contents
 
 | Phase / Commit | Details          |
@@ -23,3 +22,5 @@ https://www.robinwieruch.de/react-function-component/
 | 1              | Installations    |
 | 2              | UI & Main layout |
 | 3              | State & Props    |
+| 4              | Firebase Config    |
+
