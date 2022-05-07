@@ -5,36 +5,16 @@
 - React app & Firebase
 - Eeach commit - a development phase, so you can follow in your own phase.
 
-## Phase 1 - UI & Main Layout
+## Phase 3 - State & Props
 
-Install MUI, cool UI package for faster development.
+First, read about React function component. I recommand to focus and work with this concept (and not class component).
 
-```sh
-npm install @mui/material @emotion/react @emotion/styled
-```
+Read:
+https://reactjs.org/docs/components-and-props.html
 
-read more here: https://mui.com/
+https://reactjs.org/docs/hooks-intro.html
 
-### CSS flexbox
-
-Now, we will start to build the main layout.
-First, read about html & css! Those are the basics, and you must have basic knowledge about it.
-After that, you need to learn about the flexbox layout module.
-
-Read about it here: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-MUI flexbox: https://mui.com/system/flexbox/
-
-The Flexbox Layout (Flexible Box) module aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).
-
-### MUI Theme & ThemeProvider
-
-The theme object contain all the theme info for out app - colors, sizes, fonts and more!
-https://mui.com/material-ui/customization/theming/#themeprovider
-
-### Components
-
-We make our own first component: Header, and use other MUI pre-built component.
+https://www.robinwieruch.de/react-function-component/
 
 ## Table of Contents
 
@@ -42,3 +22,4 @@ We make our own first component: Header, and use other MUI pre-built component.
 | -------------- | ---------------- |
 | 1              | Installations    |
 | 2              | UI & Main layout |
+| 3              | State & Props    |
