@@ -1,9 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import { getMeetingDocs } from "../firebase";
+import { getMeetingDocs } from "../../firebase";
+import { MeetItem } from "../../types";
+import { FriendCard } from "./FriendCard";
 
 export const HomePage = () => {
-  const [result, setResult] = useState<any>();
+  const [result, setResult] = useState<MeetItem[]>();
 
   /**
    * This is the useEffect hook-  https://reactjs.org/docs/hooks-effect.html
@@ -19,11 +21,14 @@ export const HomePage = () => {
     // If the array empty - the function will only runs once (when the component mount)
   }, []);
 
-  console.log("From DB", result);
-
+  // Before iterating, we check the we have any data.
   return (
     <Box>
       <Typography variant='h3'>אחלה של עמוד בית</Typography>
+      <Box sx={{ display: "flex", gap: "10px", margin: "25px" }}>
+        {result &&
+          result.map((item) => <FriendCard key={item.id} meetItem={item} />)}
+      </Box>
     </Box>
   );
 };
