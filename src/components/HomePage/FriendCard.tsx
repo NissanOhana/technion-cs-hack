@@ -13,8 +13,6 @@ interface FreindCardProps {
 }
 
 export const FriendCard: React.FC<FreindCardProps> = ({ meetItem }) => {
-  console.log(meetItem);
-
   const gameInfo = () => {
     const dateString = meetItem.date?.toDate().toDateString();
     // String interpolation:
@@ -22,7 +20,7 @@ export const FriendCard: React.FC<FreindCardProps> = ({ meetItem }) => {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, minWidth: 250 }}>
       <CardContent>
         <Typography gutterBottom variant='h5' component='div'>
           {meetItem.name}
