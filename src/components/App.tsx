@@ -1,41 +1,33 @@
-import { Container, ThemeProvider } from "@mui/material";
-import { useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth } from "../firebase";
+import { LoginPage } from "./LoginPage";
+import { UserApp } from "./UserApp";
 import { getAppTheme } from "../theme";
-import { ErrorPage } from "./ErrorPage";
-import { FAQPage } from "./FAQPage";
-import { Header } from "./Header";
-import { HomePage } from "./HomePage/HomePage";
+import { ThemeProvider } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
 
-function App() {
-  /**
-   * The useMemo hook - https://reactjs.org/docs/hooks-reference.html#usememo
-   * For performance optimizations. We don't want to call the getAppTheme each time, because
-   * the result is the same (the theme isn't change...). useMemo helps us with that, and "remember" the value.
-   */
+export const App = () => {
+  const [user, setUser] = useState<any>();
 
   const theme = useMemo(() => getAppTheme(), []);
 
-  const [page, setPage] = useState("home");
-
-  const handleChangePage = (page: string) => {
-    setPage(page);
+  const handleSignIn = async () => {
+    const googleProvier = new GoogleAuthProvider();
+    const signRes = await signInWithPopup(auth, googleProvier);
+    setUser(signRes);
   };
 
-  // Check how we case pass props: values or even functions! :)
   return (
-    <ThemeProvider theme={theme}>
-      <Container maxWidth='lg' sx={{ textAlign: "center" }}>
-        <Header handleChangePage={handleChangePage} />
-        {page === "home" ? (
-          <HomePage />
-        ) : page === "faq" ? (
-          <FAQPage />
+    <>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        {!!user ? (
+          <UserApp user={user} />
         ) : (
-          <ErrorPage />
+          <LoginPage loginHandler={handleSignIn} />
         )}
-      </Container>
-    </ThemeProvider>
+      </ThemeProvider>
+    </>
   );
-}
-
-export default App;
+};

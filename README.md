@@ -5,12 +5,12 @@
 - React app & Firebase
 - Eeach commit - a development phase, so you can follow at your own pace.
 
-## Phase 7 - Add Doc - Button, Inputs & Dialog
+## Phase 9 - Authentication
 
-- Add floating button.
-- Dialog Component, and handle with inputs.
-- Using Date Picker component, by MUI, for handling dates inputs.
-- Post new friend to DB.
+- Authentications with firebase & google.
+- Add login page.
+- Use user deatails from google.
+- Read about onAuthStateChanged for persistence.
 
 ## Table of Contents
 
@@ -24,3 +24,4 @@
 | 6              | Home Page Layout                  |
 | 7              | Live Updating Data                |
 | 8              | Add Doc - Button, Inputs & Dialog |
+| 9              | Authentication                    |
