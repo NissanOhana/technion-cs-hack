@@ -4,7 +4,7 @@ import { getAppTheme } from "../theme";
 import { ErrorPage } from "./ErrorPage";
 import { FAQPage } from "./FAQPage";
 import { Header } from "./Header";
-import { HomePage } from "./HomePage";
+import { HomePage } from "./HomePage/HomePage";
 
 function App() {
   /**

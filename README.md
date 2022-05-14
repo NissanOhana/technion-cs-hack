@@ -5,21 +5,14 @@
 - React app & Firebase
 - Eeach commit - a development phase, so you can follow in your own phase.
 
-## Phase 5 - Firestore DB
+## Phase 6 - Home Page Layout
 
-Create new Firestore DB and connect it to out app.
+Lets take our data that we fetched from the DB and "visualize" it with components!
 
-Get, Create and Delete documents from our datebase.
-
-But before you can start, you _MUST_ read about async programing:
-
-- Read: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
-- Read: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-- Watch: https://www.youtube.com/watch?v=vn3tm0quoqE
-- Watch: https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=4s
-
-Read about firestore functions - we use web version 9 (modular) : https://firebase.google.com/docs/firestore
-
+- We add type for the data collection
+- We need to create a new component - for that, I refactor the file structre and create "HomePage" directory.
+- We took the data from the DB, and iterate it. Each item, we send as a prop to the new compoent the we made.
+- We use the Card component from MUI from creating the FriendCard component.
 ## Table of Contents
 
 | Phase / Commit | Details          |
