@@ -6,7 +6,10 @@ import { MeetItem } from "../../types";
 import { AddFriendDialog } from "./AddFriendDialog";
 import { FriendCard } from "./FriendCard";
 
-export const HomePage = () => {
+interface HomePageProps {
+  displayName: string;
+}
+export const HomePage: React.FC<HomePageProps> = ({ displayName }) => {
   const [result, setResult] = useState<MeetItem[]>();
   const [openDialog, setOpenDialog] = useState<boolean>(false);
   /**
@@ -29,7 +32,7 @@ export const HomePage = () => {
   // Adding Dialog component
   return (
     <Box>
-      <Typography variant='h3'>אחלה של עמוד בית</Typography>
+      <Typography variant='h3'>Hello {displayName}</Typography>
       <Box
         sx={{
           display: "flex",

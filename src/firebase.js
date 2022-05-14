@@ -1,11 +1,12 @@
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 import {
-  getFirestore,
-  collection,
-  getDocs,
-  deleteDoc,
   addDoc,
+  collection,
+  deleteDoc,
   doc,
+  getDocs,
+  getFirestore,
 } from "firebase/firestore";
 
 // Your web app's Firebase configuration
@@ -60,3 +61,5 @@ export const getMeetingDocs = () => getItemsDocs(meetingCollectionRef);
 export const addMeetingDoc = (newDoc) =>
   addItemDoc(meetingCollectionRef, newDoc);
 export const deleteMeetingDoc = (docId) => deleteItemDoc("Meet", docId);
+
+export const auth = getAuth();

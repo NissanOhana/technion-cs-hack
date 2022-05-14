@@ -62,8 +62,6 @@ export const AddFriendDialog: React.FC<AddFriendDialogProps> = ({
     });
   };
 
-  console.log(`--> Updated State:`, meetItem);
-
   // Think about how can we reduce the component (in terms of code)
   return (
     <Dialog open={open} onClose={handleClose}>
