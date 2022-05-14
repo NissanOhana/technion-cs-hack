@@ -24,7 +24,7 @@ function App() {
   // Check how we case pass props: values or even functions! :)
   return (
     <ThemeProvider theme={theme}>
-      <Container maxWidth='md' sx={{ textAlign: "center" }}>
+      <Container maxWidth='lg' sx={{ textAlign: "center" }}>
         <Header handleChangePage={handleChangePage} />
         {page === "home" ? (
           <HomePage />
