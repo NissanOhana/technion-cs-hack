@@ -12,7 +12,7 @@ Lets take our data that we fetched from the DB and "visualize" it with component
 - We add type for the data collection
 - We need to create a new component - for that, I refactor the file structre and create "HomePage" directory.
 - We took the data from the DB, and iterate it. Each item, we send as a prop to the new compoent the we made.
-- We use the Card component from MUI from creating the FriendCard component.
+- We use the Card component from MUI to creat the FriendCard component.
 
 ## Table of Contents
 
