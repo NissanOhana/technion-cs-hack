@@ -5,22 +5,20 @@
 - React app & Firebase
 - Eeach commit - a development phase, so you can follow in your own phase.
 
-## Phase 6 - Home Page Layout
+## Phase 7 - Live Updating Data
 
-Lets take our data that we fetched from the DB and "visualize" it with components!
+We want the data will update imedaitly witout refreshing the page.
 
-- We add type for the data collection
-- We need to create a new component - for that, I refactor the file structre and create "HomePage" directory.
-- We took the data from the DB, and iterate it. Each item, we send as a prop to the new compoent the we made.
-- We use the Card component from MUI from creating the FriendCard component.
+onSnapshot function, from firestoe, come to the rescue :)
 
 ## Table of Contents
 
-| Phase / Commit | Details          |
-| -------------- | ---------------- |
-| 1              | Installations    |
-| 2              | UI & Main layout |
-| 3              | State & Props    |
-| 4              | Firebase Config  |
-| 5              | Firestore DB     |
-| 6              | Home Page Layout |
+| Phase / Commit | Details            |
+| -------------- | ------------------ |
+| 1              | Installations      |
+| 2              | UI & Main layout   |
+| 3              | State & Props      |
+| 4              | Firebase Config    |
+| 5              | Firestore DB       |
+| 6              | Home Page Layout   |
+| 6              | Live Updating Data |

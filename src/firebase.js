@@ -23,7 +23,7 @@ initializeApp(firebaseConfig);
 
 // Connect to a collection
 export const db = getFirestore();
-const meetingCollectionRef = collection(db, "Meet");
+export const meetingCollectionRef = collection(db, "Meet");
 
 // Get All Doc:
 const getItemsDocs = async (DBRef) => {

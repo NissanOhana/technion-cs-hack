@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
+import { onSnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { getMeetingDocs } from "../../firebase";
+import { meetingCollectionRef } from "../../firebase";
 import { MeetItem } from "../../types";
 import { FriendCard } from "./FriendCard";
 
@@ -12,11 +13,11 @@ export const HomePage = () => {
    * Lets us to preform side effect in out component - like fetch data from remote API.
    */
   useEffect(() => {
-    async function load() {
-      const res = await getMeetingDocs();
-      setResult(res);
-    }
-    load();
+    onSnapshot(meetingCollectionRef, (snapshot: any) => {
+      setResult(
+        snapshot.docs.map((doc: any) => ({ ...doc.data(), id: doc.id }))
+      );
+    });
     // This is the dependencies array. Each time some of the array value changes, the useEffect function re-run.
     // If the array empty - the function will only runs once (when the component mount)
   }, []);
