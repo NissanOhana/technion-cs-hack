@@ -5,12 +5,6 @@
 - React app & Firebase
 - Eeach commit - a development phase, so you can follow at your own pace.
 
-## Phase 10 - Deploy
-
-Deploy with firebase
-- Follow: https://www.youtube.com/watch?v=IDHfvpsYShs.
-- You can use github actions! :) 
-
 
 ## Table of Contents
 
