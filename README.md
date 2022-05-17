@@ -5,12 +5,12 @@
 - React app & Firebase
 - Eeach commit - a development phase, so you can follow at your own pace.
 
-## Phase 9 - Authentication
+## Phase 10 - Deploy
 
-- Authentications with firebase & google.
-- Add login page.
-- Use user deatails from google.
-- Read about onAuthStateChanged for persistence.
+Deploy with firebase
+- Follow: https://www.youtube.com/watch?v=IDHfvpsYShs.
+- You can use github actions! :) 
+
 
 ## Table of Contents
 
@@ -25,3 +25,4 @@
 | 7              | Live Updating Data                |
 | 8              | Add Doc - Button, Inputs & Dialog |
 | 9              | Authentication                    |
+| 10             | Deploy                            |
