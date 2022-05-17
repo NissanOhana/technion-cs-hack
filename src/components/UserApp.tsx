@@ -21,7 +21,6 @@ export const UserApp: React.FC<UserAppProps> = ({ user }) => {
     setPage(page);
   };
 
-  console.log(user);
 
   // Check how we case pass props: values or even functions! :)
   return (
