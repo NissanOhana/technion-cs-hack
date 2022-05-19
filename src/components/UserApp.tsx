@@ -4,6 +4,7 @@ import { ErrorPage } from "./ErrorPage";
 import { FAQPage } from "./FAQPage";
 import { Header } from "./Header";
 import { HomePage } from "./HomePage/HomePage";
+import { LoginfakePage } from "./LoginfakePage";
 
 interface UserAppProps {
   user: any;
@@ -30,6 +31,8 @@ export const UserApp: React.FC<UserAppProps> = ({ user }) => {
         <HomePage displayName={user?.user?.displayName ?? ''} />
       ) : page === "faq" ? (
         <FAQPage />
+      ) : page === "fakelog" ? (
+          <LoginfakePage />
       ) : (
         <ErrorPage />
       )}

@@ -11,12 +11,13 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBbIwrPLIjy4oAQniCWvHGVKNXQJbRFxIc",
-  authDomain: "cs-doing-good.firebaseapp.com",
-  projectId: "cs-doing-good",
-  storageBucket: "cs-doing-good.appspot.com",
-  messagingSenderId: "308422742136",
-  appId: "1:308422742136:web:d1515604bc5ffe748fdd8d",
+  apiKey: "AIzaSyCU-_q-YMt6k1-VXOLowA2A95Xx3LrBuAA",
+  authDomain: "matan1-23.firebaseapp.com",
+  projectId: "matan1-23",
+  storageBucket: "matan1-23.appspot.com",
+  messagingSenderId: "381227379862",
+  appId: "1:381227379862:web:552de3f54a24e41f09e6b7",
+  measurementId: "G-E1VH4TJVPM"
 };
 
 // Initialize Firebase
