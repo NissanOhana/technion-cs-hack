@@ -27,10 +27,13 @@ export const Header: React.FC<HeaderProps> = ({
         margin: "10px",
       }}
     >
-      <Typography variant='h3'>פוגש חבר 🤙</Typography>
+      <Typography variant='h3'>Lmobile</Typography>
       <Box sx={{ display: "flex", alignItems: "center" }}>
         <Button size='large' onClick={() => handleChangePage("faq")}>
           <Typography variant='h5'> שאלות ותשובות </Typography>
+        </Button>
+        <Button size='large' onClick={() => handleChangePage("fakelog")}>
+          <Typography variant='h5'> הרשמה </Typography>
         </Button>
         <Button size='large' onClick={() => handleChangePage("home")}>
           <Typography variant='h5'> עמוד ראשי </Typography>

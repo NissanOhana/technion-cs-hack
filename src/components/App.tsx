@@ -12,12 +12,14 @@ export const App = () => {
 
   const theme = useMemo(() => getAppTheme(), []);
 
-  const handleSignIn = async () => {
-    const googleProvier = new GoogleAuthProvider();
-    const signRes = await signInWithPopup(auth, googleProvier);
-    setUser(signRes);
-  };
+   const handleSignIn = async () => {
+     //const googleProvier = new GoogleAuthProvider();
+     //const signRes = await signInWithPopup(auth, googleProvier);
+     //setUser(signRes);
 
+    console.log('hello matan you have nice bulbul');
+    };
+    
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -25,7 +27,8 @@ export const App = () => {
         {!!user ? (
           <UserApp user={user} />
         ) : (
-          <LoginPage loginHandler={handleSignIn} />
+           <UserApp user={'we moved"'} />
+          // <LoginPage loginHandler={handleSignIn} />
         )}
       </ThemeProvider>
     </>
